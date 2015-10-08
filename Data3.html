@@ -9,7 +9,7 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
-  <body ng-controller="StoreController as store">
+  <body ng-controller="thirdCollect as third">
     <!--  Store Header  -->
     <header>
 	   <div id = "logo">
@@ -33,14 +33,15 @@
 			<li><a href="Data3.html">DataStream 3</a></li>
 			</ul>
 			</div>
-      <div class="list-group-item" ng-repeat="product in store.products">
-        <h3>{{product.name}}</h3>
-
-        <!-- Image Gallery  -->
-        <product-gallery></product-gallery>
+      <div class="list-group-item" ng-repeat="data in third.data">
+        <h3>{{data.name}}</h3>
+		  <!-- Image Gallery  -->
+        <third-gallery></third-gallery>
 
         <!-- Product Tabs  -->
-        <product-tabs></product-tabs>
+        <third-tabs></third-tabs>
+
+ 
       </div>
 
     </div>

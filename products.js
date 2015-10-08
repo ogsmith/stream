@@ -14,6 +14,12 @@
         templateUrl: "second-description.html"
       };
     });
+		app.directive("thirdDescription", function() {
+      return {
+        restrict: 'E',
+        templateUrl: "third-description.html"
+      };
+    });
 
     app.directive("productReviews", function() {
       return {
@@ -34,6 +40,13 @@
         templateUrl: "secondSpecs.html"
       };
     });
+		 app.directive("thirdSpecs", function() {
+      return {
+        restrict:"A",
+        templateUrl: "third-specs.html"
+      };
+    });
+
 
     app.directive("productTabs", function() {
       return {
@@ -71,6 +84,24 @@
         controllerAs: "tab"
       };
     });
+		   app.directive("thirdTabs", function() {
+      return {
+        restrict: "E",
+        templateUrl: "third-tabs.html",
+        controller: function() {
+          this.tab = 1;
+
+          this.isSet = function(checkTab) {
+            return this.tab === checkTab;
+          };
+
+          this.setTab = function(activeTab) {
+            this.tab = activeTab;
+          };
+        },
+        controllerAs: "tab"
+      };
+    });
 
     app.directive("productGallery", function() {
       return {
@@ -89,6 +120,19 @@
       return {
         restrict: "E",
         templateUrl: "second-gallery.html",
+        controller: function() {
+          this.current = 0;
+          this.setCurrent = function(imageNumber){
+            this.current = imageNumber || 0;
+          };
+        },
+        controllerAs: "gallery"
+      };
+    });
+		    app.directive("thirdGallery", function() {
+      return {
+        restrict: "E",
+        templateUrl: "third-gallery.html",
         controller: function() {
           this.current = 0;
           this.setCurrent = function(imageNumber){
