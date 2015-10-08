@@ -1,1 +1,1 @@
-http://ogsmith.github.io/Data/
+http://ogsmith.github.io/stream/
