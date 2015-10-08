@@ -1,0 +1,17 @@
+[
+{
+    "name": "Data Set 3",
+    "description": "This Data Set is a collection of....",
+    "shine": 70,
+    "price": 1100,
+    "rarity": 2,
+    "color": "#000",
+    "faces": 6,
+    "images": [
+      "images/gem-06.gif",
+      "images/gem-07.gif",
+      "images/gem-08.gif"
+    ],
+    "reviews": []
+  }
+]

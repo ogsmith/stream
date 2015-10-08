@@ -1,0 +1,17 @@
+ [
+ {
+    "name": "Data Set 2",
+    "description": "This Data Set is a collection of....",
+    "shine": 9,
+    "price": 22.90,
+    "rarity": 6,
+    "color": "#EEE",
+    "faces": 12,
+    "images": [
+      "images/gem-01.gif",
+      "images/gem-03.gif",
+      "images/gem-04.gif"
+    ],
+    "reviews": []
+  }
+  ]

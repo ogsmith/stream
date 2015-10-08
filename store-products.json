@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Data Set 1",
+    "description": "This Data Set is a collection of....",
+    "shine": "5/3/2012",
+    "price": "Radlab",
+    "rarity": "UNCLASSIFIED",
+    "color": "Project yada",
+    "faces": "Radlab",
+    "images": [
+      "images/gem-02.gif",
+      "images/gem-05.gif",
+      "images/gem-09.gif"
+    ],
+    "reviews": []
+  }
+  ]
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body ng-controller="StoreController as store">
+    <!--  Store Header  -->
+    <header>
+	   <div id = "logo">
+<img src = "rrlogo.png"></img>
+</div>
+      <h1 class="text-center">Riverside Research</h1>
+      <h2 class="text-center">Data Center</h2>
+	
+    </header>
+
+    <!--  Products Container  -->
+    <div class="list-group">
+      <!--  Product Container  -->
+	   <div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select DataSet
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href = "index.html">Home</a></li>
+			<li><a href="Data1.html">DataStream 1</a></li>
+			<li><a href="Data2.html">DataStream 2</a></li>
+			<li><a href="Data3.html">DataStream 3</a></li>
+			</ul>
+			</div>
+      <div class="list-group-item" ng-repeat="product in store.products">
+        <h3>{{product.name}}</h3>
+
+        <!-- Image Gallery  -->
+        <product-gallery></product-gallery>
+
+        <!-- Product Tabs  -->
+        <product-tabs></product-tabs>
+      </div>
+
+    </div>
+  </body>
+</html>
