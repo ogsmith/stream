@@ -7,6 +7,13 @@
         templateUrl: "product-description.html"
       };
     });
+	
+	    app.directive("secondDescription", function() {
+      return {
+        restrict: 'E',
+        templateUrl: "second-description.html"
+      };
+    });
 
     app.directive("productReviews", function() {
       return {
@@ -32,6 +39,24 @@
       return {
         restrict: "E",
         templateUrl: "product-tabs.html",
+        controller: function() {
+          this.tab = 1;
+
+          this.isSet = function(checkTab) {
+            return this.tab === checkTab;
+          };
+
+          this.setTab = function(activeTab) {
+            this.tab = activeTab;
+          };
+        },
+        controllerAs: "tab"
+      };
+    });
+	   app.directive("secondTabs", function() {
+      return {
+        restrict: "E",
+        templateUrl: "second-tabs.html",
         controller: function() {
           this.tab = 1;
 
