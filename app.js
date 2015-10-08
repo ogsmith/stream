@@ -15,6 +15,13 @@ app.controller('secondCollect', ['$http', function($http){
         second.data = data;
     });
   }]);
+  app.controller('thirdCollect', ['$http', function($http){
+    var second = this;
+    second.data = [];
+    $http.get('https://raw.githubusercontent.com/ogsmith/Data/master/data3.json').success(function(data){
+        third.data = data;
+    });
+  }]);
   app.controller('ReviewController', function() {
     this.review = {};
 
